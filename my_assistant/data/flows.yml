@@ -1,0 +1,20 @@
+# Flows定义文件
+# 定义对话流程
+
+flows:
+  greet_flow:
+    description: "问候流程"
+    steps:
+      - id: "start"
+        action: action_greet
+        next: "end"
+  
+  help_flow:
+    description: "帮助流程"
+    steps:
+      - id: "ask_topic"
+        action: utter_ask_help
+        next: "handle"
+      - id: "handle"
+        action: action_handle_help
+        next: "end"

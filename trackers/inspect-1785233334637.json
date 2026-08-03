@@ -1,0 +1,178 @@
+{
+  "sender_id": "inspect-1785233334637",
+  "slots": {
+    "user_id": {
+      "name": "user_id",
+      "type": "any",
+      "value": 1001111111,
+      "initial_value": null,
+      "influence_conversation": true,
+      "mapping_type": "from_llm"
+    }
+  },
+  "dialogue_turns": [
+    {
+      "user_message": {
+        "text": "是的",
+        "sender_id": "inspect-1785233334637",
+        "timestamp": 1785233339.6498363,
+        "input_channel": null,
+        "metadata": {}
+      },
+      "bot_messages": [],
+      "commands": [],
+      "action_name": null,
+      "timestamp": 1785233339.6498363
+    },
+    {
+      "user_message": {
+        "text": "你好",
+        "sender_id": "inspect-1785233334637",
+        "timestamp": 1785233348.3366706,
+        "input_channel": null,
+        "metadata": {}
+      },
+      "bot_messages": [],
+      "commands": [],
+      "action_name": null,
+      "timestamp": 1785233348.3366706
+    },
+    {
+      "user_message": {
+        "text": "今天天气",
+        "sender_id": "inspect-1785233334637",
+        "timestamp": 1785233374.8990817,
+        "input_channel": null,
+        "metadata": {}
+      },
+      "bot_messages": [],
+      "commands": [],
+      "action_name": null,
+      "timestamp": 1785233374.8990817
+    },
+    {
+      "user_message": {
+        "text": "1",
+        "sender_id": "inspect-1785233334637",
+        "timestamp": 1785233411.4156897,
+        "input_channel": null,
+        "metadata": {}
+      },
+      "bot_messages": [],
+      "commands": [],
+      "action_name": null,
+      "timestamp": 1785233411.4156897
+    },
+    {
+      "user_message": {
+        "text": "1",
+        "sender_id": "inspect-1785233334637",
+        "timestamp": 1785233412.440946,
+        "input_channel": null,
+        "metadata": {}
+      },
+      "bot_messages": [],
+      "commands": [],
+      "action_name": null,
+      "timestamp": 1785233412.440946
+    },
+    {
+      "user_message": {
+        "text": "/SetSlots(user_id=1001)",
+        "sender_id": "inspect-1785233334637",
+        "timestamp": 1785233413.8647869,
+        "input_channel": null,
+        "metadata": {
+          "payload": true
+        }
+      },
+      "bot_messages": [],
+      "commands": [
+        {
+          "name": "user_id",
+          "value": 1001,
+          "extractor": "llm",
+          "command": "set_slot"
+        }
+      ],
+      "action_name": null,
+      "timestamp": 1785233413.8647869
+    },
+    {
+      "user_message": {
+        "text": "/SetSlots(user_id=1001111111)",
+        "sender_id": "inspect-1785233334637",
+        "timestamp": 1785233418.5602849,
+        "input_channel": null,
+        "metadata": {
+          "payload": true
+        }
+      },
+      "bot_messages": [],
+      "commands": [
+        {
+          "name": "user_id",
+          "value": 1001111111,
+          "extractor": "llm",
+          "command": "set_slot"
+        }
+      ],
+      "action_name": null,
+      "timestamp": 1785233418.5602849
+    },
+    {
+      "user_message": {
+        "text": "213213",
+        "sender_id": "inspect-1785233334637",
+        "timestamp": 1785233419.776832,
+        "input_channel": null,
+        "metadata": {}
+      },
+      "bot_messages": [],
+      "commands": [],
+      "action_name": null,
+      "timestamp": 1785233419.776832
+    },
+    {
+      "user_message": {
+        "text": "今天天气",
+        "sender_id": "inspect-1785233334637",
+        "timestamp": 1785233427.424916,
+        "input_channel": null,
+        "metadata": {}
+      },
+      "bot_messages": [],
+      "commands": [],
+      "action_name": null,
+      "timestamp": 1785233427.424916
+    },
+    {
+      "user_message": {
+        "text": "今天天气",
+        "sender_id": "inspect-1785233334637",
+        "timestamp": 1785233430.3119516,
+        "input_channel": null,
+        "metadata": {}
+      },
+      "bot_messages": [],
+      "commands": [],
+      "action_name": null,
+      "timestamp": 1785233430.3119516
+    }
+  ],
+  "dialogue_stack": {
+    "frames": []
+  },
+  "flow_history": [],
+  "latest_action_name": "action_listen",
+  "latest_message": {
+    "text": "今天天气",
+    "sender_id": "inspect-1785233334637",
+    "timestamp": 1785233430.3119516,
+    "input_channel": null,
+    "metadata": {}
+  },
+  "paused": false,
+  "created_at": 1785233339.6468427,
+  "updated_at": 1785233430.3119516
+}

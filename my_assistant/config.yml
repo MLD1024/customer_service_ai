@@ -1,0 +1,20 @@
+# Atguigu AI 配置文件
+# LLM驱动的对话系统配置
+
+assistant_id: "bright-assistant-201"
+
+# Pipeline配置 - 对话理解组件
+pipeline:
+  # LLM命令生成器：将用户输入转换为系统命令
+  - name: "LLMCommandGenerator"
+    llm: "default"  # 引用endpoints.yml中的模型
+
+# 策略配置
+policies:
+  # Flow策略：处理对话流程
+  - name: "FlowPolicy"
+  # 企业搜索策略：处理知识检索和降级
+  - name: "EnterpriseSearchPolicy"
+    # vector_store: "my_module.MyRetriever"  # 自定义检索器全类名（可选）
+    llm: "default"  # 引用endpoints.yml中的模型
+    embeddings: "default"  # 引用endpoints.yml中的嵌入模型

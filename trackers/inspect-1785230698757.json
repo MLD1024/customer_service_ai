@@ -1,0 +1,174 @@
+{
+  "sender_id": "inspect-1785230698757",
+  "slots": {
+    "user_id": {
+      "name": "user_id",
+      "type": "any",
+      "value": "1001阿是发多少",
+      "initial_value": null,
+      "influence_conversation": true,
+      "mapping_type": "from_llm"
+    }
+  },
+  "dialogue_turns": [
+    {
+      "user_message": {
+        "text": "1111",
+        "sender_id": "inspect-1785230698757",
+        "timestamp": 1785230702.5450282,
+        "input_channel": null,
+        "metadata": {}
+      },
+      "bot_messages": [],
+      "commands": [],
+      "action_name": null,
+      "timestamp": 1785230702.5450282
+    },
+    {
+      "user_message": {
+        "text": "撒旦法时代发生",
+        "sender_id": "inspect-1785230698757",
+        "timestamp": 1785230718.5830007,
+        "input_channel": null,
+        "metadata": {}
+      },
+      "bot_messages": [],
+      "commands": [],
+      "action_name": null,
+      "timestamp": 1785230718.5830007
+    },
+    {
+      "user_message": {
+        "text": "阿斯顿发生",
+        "sender_id": "inspect-1785230698757",
+        "timestamp": 1785230720.5185475,
+        "input_channel": null,
+        "metadata": {}
+      },
+      "bot_messages": [],
+      "commands": [],
+      "action_name": null,
+      "timestamp": 1785230720.5185475
+    },
+    {
+      "user_message": {
+        "text": "你好",
+        "sender_id": "inspect-1785230698757",
+        "timestamp": 1785230774.2888865,
+        "input_channel": null,
+        "metadata": {}
+      },
+      "bot_messages": [],
+      "commands": [],
+      "action_name": null,
+      "timestamp": 1785230774.2888865
+    },
+    {
+      "user_message": {
+        "text": "/SetSlots(user_id=1001)",
+        "sender_id": "inspect-1785230698757",
+        "timestamp": 1785230812.9124746,
+        "input_channel": null,
+        "metadata": {
+          "payload": true
+        }
+      },
+      "bot_messages": [],
+      "commands": [
+        {
+          "name": "user_id",
+          "value": 1001,
+          "extractor": "llm",
+          "command": "set_slot"
+        }
+      ],
+      "action_name": null,
+      "timestamp": 1785230812.9124746
+    },
+    {
+      "user_message": {
+        "text": "/SetSlots(user_id=1001)",
+        "sender_id": "inspect-1785230698757",
+        "timestamp": 1785230815.7184918,
+        "input_channel": null,
+        "metadata": {
+          "payload": true
+        }
+      },
+      "bot_messages": [],
+      "commands": [
+        {
+          "name": "user_id",
+          "value": 1001,
+          "extractor": "llm",
+          "command": "set_slot"
+        }
+      ],
+      "action_name": null,
+      "timestamp": 1785230815.7184918
+    },
+    {
+      "user_message": {
+        "text": "/SetSlots(user_id=1001阿是发多少)",
+        "sender_id": "inspect-1785230698757",
+        "timestamp": 1785230817.7919452,
+        "input_channel": null,
+        "metadata": {
+          "payload": true
+        }
+      },
+      "bot_messages": [],
+      "commands": [
+        {
+          "name": "user_id",
+          "value": "1001阿是发多少",
+          "extractor": "llm",
+          "command": "set_slot"
+        }
+      ],
+      "action_name": null,
+      "timestamp": 1785230817.7919452
+    },
+    {
+      "user_message": {
+        "text": "神鼎飞丹砂",
+        "sender_id": "inspect-1785230698757",
+        "timestamp": 1785230820.6234882,
+        "input_channel": null,
+        "metadata": {}
+      },
+      "bot_messages": [],
+      "commands": [],
+      "action_name": null,
+      "timestamp": 1785230820.6234882
+    },
+    {
+      "user_message": {
+        "text": "收拾收拾",
+        "sender_id": "inspect-1785230698757",
+        "timestamp": 1785230841.8704386,
+        "input_channel": null,
+        "metadata": {}
+      },
+      "bot_messages": [],
+      "commands": [],
+      "action_name": null,
+      "timestamp": 1785230841.8704386
+    }
+  ],
+  "dialogue_stack": {
+    "frames": []
+  },
+  "flow_history": [],
+  "latest_action_name": "action_listen",
+  "latest_message": {
+    "text": "收拾收拾",
+    "sender_id": "inspect-1785230698757",
+    "timestamp": 1785230841.8704386,
+    "input_channel": null,
+    "metadata": {}
+  },
+  "paused": false,
+  "created_at": 1785230702.5416021,
+  "updated_at": 1785230841.8704386
+}

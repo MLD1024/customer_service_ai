@@ -1,0 +1,52 @@
+# Endpoints配置文件
+# 定义模型服务和外部端点
+
+# 模型组配置 - 统一管理所有LLM和嵌入模型
+models:
+  # 默认LLM模型
+  default:
+    type: "openai"  # openai, qwen, azure, anthropic
+    model: "deepseek-chat"
+    temperature: 0.0
+    max_tokens: 1024
+    api_key: ${DEEPSEEK_API_KEY}  # 从环境变量读取
+    api_base: "https://api.deepseek.com"  # 自定义API地址（用于vLLM等自部署服务）
+    # enable_thinking: false  # 启用深度思考模式
+  
+  # 可定义多个模型用于不同用途
+  # rephrase:
+  #   type: "qwen"
+  #   model: "qwen-turbo"
+  #   temperature: 0.7
+
+# 嵌入模型配置
+embeddings:
+  default:
+    type: "openai"
+    model: "text-embedding-3-small"
+    # api_key: ${OPENAI_API_KEY}
+
+# NLG配置 - 响应生成和重述
+nlg:
+  # 响应重述功能
+  rephrase:
+    enabled: false
+    model: "default"  # 引用上面models中的模型名称
+    style: "friendly"  # friendly, professional, casual, empathetic
+    language: "zh"
+
+# 向量存储配置 - 传递给 retriever.connect() 的连接参数
+# 检索器类名在 config.yml 的 policies.EnterpriseSearchPolicy.vector_store 中指定
+vector_store:
+  # 示例：Neo4j 连接配置
+  # uri: "bolt://localhost:7687"
+  # user: "neo4j"
+  # password: "${NEO4J_PASSWORD}"
+  # 示例：Elasticsearch 连接配置
+  # hosts: ["http://localhost:9200"]
+  # index: "knowledge_base"
+
+# Tracker Store配置 - 对话状态存储
+tracker_store:
+  type: json  # json, mysql, memory
+  path: "./tracker_store"

@@ -1,0 +1,54 @@
+# Domain配置文件
+# 定义对话系统的槽位、动作、响应等
+
+version: "1.0"
+
+# 槽位定义
+# 每个槽位必须包含: type（数据类型）和 mappings（映射方式）
+slots:
+  user_name:
+    type: text
+    mappings:
+      - type: from_llm  # 由LLM从用户输入中提取
+    description: "用户姓名"
+  
+  current_topic:
+    type: categorical
+    values:
+      - greeting
+      - help
+      - goodbye
+    mappings:
+      - type: from_llm
+    description: "当前对话主题"
+  
+  order_id:
+    type: text
+    mappings:
+      - type: controlled  # 由Action代码控制填充
+    description: "订单编号，由系统生成"
+
+# 响应模板
+responses:
+  utter_greet:
+    - text: "你好！我是Atguigu AI助手，有什么可以帮助你的吗？"
+    - text: "您好！很高兴为您服务。"
+  
+  utter_goodbye:
+    - text: "再见！祝您生活愉快！"
+    - text: "感谢使用，再见！"
+  
+  utter_default:
+    - text: "抱歉，我没有理解您的意思，能否换一种方式表达？"
+  
+  utter_ask_help:
+    - text: "请问您需要什么帮助？"
+
+# 动作列表
+actions:
+  - action_greet
+  - action_goodbye
+  - action_handle_help
+
+# Forms (表单)
+forms: ~

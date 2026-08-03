@@ -1,0 +1,34 @@
+{
+  "sender_id": "shell_user",
+  "slots": {},
+  "dialogue_turns": [
+    {
+      "user_message": {
+        "text": "你好",
+        "sender_id": "shell_user",
+        "timestamp": 1785233287.302147,
+        "input_channel": null,
+        "metadata": {}
+      },
+      "bot_messages": [],
+      "commands": [],
+      "action_name": null,
+      "timestamp": 1785233287.302147
+    }
+  ],
+  "dialogue_stack": {
+    "frames": []
+  },
+  "flow_history": [],
+  "latest_action_name": "action_listen",
+  "latest_message": {
+    "text": "你好",
+    "sender_id": "shell_user",
+    "timestamp": 1785233287.302147,
+    "input_channel": null,
+    "metadata": {}
+  },
+  "paused": false,
+  "created_at": 1785233287.2971666,
+  "updated_at": 1785233287.302147
+}
